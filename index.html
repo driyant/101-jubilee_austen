@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jubilee Austen | Portfolio</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -8,120 +10,177 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">    
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
 <body>
-    <!-- header -->
-    <header>
-        <div class="full-width">
-            <div class="half-width">
-                <h1>Jubilee Austen</h1>
+    <div class="container-fluid">
+        <!-- navigation -->
+        <nav id="nav__bar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Jubilee Austen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
             </div>
-            <div class="half-width">
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+        </nav>
+        <!-- end navigation -->
+        <!-- header -->
+        <header>
+            <div class="jumbotron">
+                <h1><span>Hi,</span> I'm a developer that loves clean &amp; elegant code.</h1>
+                <img src="https://images.pexels.com/photos/7799284/pexels-photo-7799284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=80&w=500" class="rounded-circle" alt="Cinque Terre"> 
             </div>
-            <h2><span>Hi,</span> I'm a developer that loves clean &amp; elegant code.</h2>
-        </div>
-    </header>
-    <!-- end header -->
-    
-    <!-- main -->
-    <main>
-        <!-- section about -->
-        <section id="about">
-            <div class="full-width">
-                <h2>A little bit about me</h2>
-                <div class="half-width">
-                    <p>I've made my home base in Providence, Rhode Island, with my small growing family.
-                        My journey into tech started with a degree in journalism. 
-                        As I started sharing my writing online, I was fascinated with how easily I could get my voice out there. 
-                        I was hooked and wanted to learn how to build my own site to fit my own specific needs.
-                   
-                    </p>
-                </div>
-                <div class="half-width">
-                    <p>
-                        That curiosity then opened a door that could never be shut. 
-                        When I learned how to build my first website, I realized I found something that gave me the freedom & versatility I was looking for in my work.
-                        Now I've made a full switch to front-end development, where I can use my organization skills and eye for detail to write clean, elegant code.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- end section about -->
+        </header>
         
-        <!-- section work -->
-        <section id="work">
-            <div class="full-width">
-                <div class="third-width">
-                    <img src="img/html-icon.png" alt="HTML icon" />
-                    <h3>Hand-Coded HTML</h3>
-                    <p>
-                        My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.
-                    </p>
+            <section class="about">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>A little bit about me</h2>
+                    </div>
+                    <div class="col-6">
+                        <p>I've made my home base in Providence, Rhode Island, with my small growing family.
+                            My journey into tech started with a degree in journalism. 
+                            As I started sharing my writing online, I was fascinated with how easily I could get my voice out there. 
+                            I was hooked and wanted to learn how to build my own site to fit my own specific needs.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            That curiosity then opened a door that could never be shut. 
+                            When I learned how to build my first website, I realized I found something that gave me the freedom & versatility I was looking for in my work.
+                            Now I've made a full switch to front-end development, where I can use my organization skills and eye for detail to write clean, elegant code.
+                        </p>
+                    </div>
                 </div>
-                <div class="third-width">
-                    <img src="img/css-icon.png" alt="CSS Icon" />
-                    <h3>Well-Organized CSS</h3>
-                    <p>
-                        I pride myself on writing CSS that is easy to read and build on. 
-                        I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.
-                    </p>
+            </section>
+            <section class="work">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Work</h2>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/html-icon.png" alt="HTML icon" />
+                        <h3>Hand-Coded HTML</h3>
+                        <p>
+                            My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/css-icon.png" alt="CSS Icon" />
+                        <h3>Well-Organized CSS</h3>
+                        <p>
+                            I pride myself on writing CSS that is easy to read and build on. 
+                            I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/pencil-icon.png" alt="Pencil Icon" />
+                        <h3>Ease Converting Design into Code</h3>
+                        <p>
+                            You can trust me to take a designer's PSD and quickly & accurately convert it into a webpage that is pixel-perfect match.
+                        </p>
+                    </div>
                 </div>
-                <div class="third-width">
-                    <img src="img/pencil-icon.png" alt="Pencil Icon" />
-                    <h3>Ease Converting Design into Code</h3>
-                    <p>
-                        You can trust me to take a designer's PSD and quickly & accurately convert it into a webpage that is pixel-perfect match.
-                    </p>
+            </section>
+            <section class="blog">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Latest Post</h2>
+                    </div>
+                    <div class="col-8">
+                        <img src="https://images.pexels.com/photos/2380249/pexels-photo-2380249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=500" class="img-thumbnail" alt="Cinque Terre"> 
+                        <h4>Title here</h4>
+                        <p>Posted on, March-21-2021</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                            assumenda unde molestias doloremque quas perspiciatis.
+                        </p>
+                        <a href="#" class="btn btn-sm">Continue reading</a>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li>
+                              <a href="">Lifestyle</a>
+                            </li>
+                            <li>
+                              <a href="">Travel</a>
+                            </li>
+                            <li>
+                              <a href="">Sport</a>
+                            </li>
+                            <li>
+                              <a href="">Food</a>
+                            </li>
+                            <li>
+                              <a href="">Technology</a>
+                            </li>
+                            <li>
+                              <a href="">DIY</a>
+                            </li>
+                            <li>
+                              <a href="">Tree-house</a>
+                            </li>
+                            <li>
+                              <a href="">Photography</a>
+                            </li>
+                            <li>
+                              <a href="">Design</a>
+                            </li>
+                          </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- end section work -->
-        
-        <!-- section contact -->
-        <footer id="contact">
-            <div class="full-width">
-                <div class="half-width">
-                    <img src="img/contact-image.png" id="contact-img" alt="Contact Image" />
+            </section>
+            <section class="contact">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="col-6">
+                        <img src="img/contact-image.png" id="contact-img" alt="Contact Image" />
+                    </div>
+                    <div class="col-6">
+                        <h3 id="email-header">Let's meet for a cup of coffee.</h3>
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1">Email address :</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your_email@example.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Your message :</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="half-width">
-                    <h2>Like what you see? </h2>
-                    <h3 id="email-header">Let's meet for a cup of coffee.</h3>
-                    <img src="img/envelope-icon.png" id="envelope" alt="Envelope Icon"><a href="mailto:hi@jubileeausten.com">hi@jubileeausten.com</a>
-                    <h3 id="socialmedia-header">Or, find me on the interwebs</h3>
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="img/twitter-icon.png"  alt="Twitter" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/tumblr-icon.png" alt="Tumblr" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank" >
-                                <img src="img/instagram-icon.png" alt="Instagram" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="img/github-icon.png" alt="Github" />
-                            </a>
-                        </li>
-                    </ul>
+            </section>
+            <footer>
+                <div class="row">
+                    <div class="col-8">
+                        <p>Copyright</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Social Icons</p>
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <!-- end section contact -->
-    </main>
-    <!-- end main -->
+            </footer>
+         <!-- end of container fluid for all sections area -->
+    </div> <!-- end of container fluid -->
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </html>
